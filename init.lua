@@ -23,7 +23,9 @@ hs.hotkey.bind(mash,      '-', function() hs.grid.adjustWidth(-1) end)
 hs.hotkey.bind(mashshift, '=', function() hs.grid.adjustHeight(1) end)
 hs.hotkey.bind(mashshift, '-', function() hs.grid.adjustHeight(-1) end)
 
-hs.hotkey.bind(mash,      'M', hs.grid.maximizeWindow)
+hs.hotkey.bind(mash, 'M', hs.grid.maximizeWindow)
+
+hs.hotkey.bind(mash, 'F', function() hs.window.focusedWindow():toggleFullScreen() end)
 
 hs.hotkey.bind(mash, 'N', hs.grid.pushWindowNextScreen)
 hs.hotkey.bind(mash, 'P', hs.grid.pushWindowPrevScreen)
