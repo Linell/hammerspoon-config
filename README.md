@@ -31,7 +31,6 @@ all of the usage is defined, after all. For a brief breakdown though, here's wha
 
 | Key Combination                 | Description                                                                                            |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| mash + <kbd>D</kbd>             | Opens the OS X dictionary.                                                                             |
 | mash + <kbd>;</kbd>             | Snaps the focused window to the grid.                                                                  |
 | mash + <kbd>'</kbd>             | Snaps *all* visible windows to the grid.                                                               |
 | mash + <kbd>=</kbd>             | Adds a column to the width of the grid.                                                                |
