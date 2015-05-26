@@ -18,10 +18,15 @@ local volumeIncrement = 5
 hs.hotkey.bind(mash, ';', function() hs.grid.snap(hs.window.focusedWindow()) end)
 hs.hotkey.bind(mash, "'", function() hs.fnutils.map(hs.window.visibleWindows(), hs.grid.snap) end)
 
-hs.hotkey.bind(mash,      '=', function() hs.grid.adjustWidth(1) end)
-hs.hotkey.bind(mash,      '-', function() hs.grid.adjustWidth(-1) end)
-hs.hotkey.bind(mashshift, '=', function() hs.grid.adjustHeight(1) end)
+hs.hotkey.bind(mash,      '=', function() hs.grid.adjustWidth(1)   end)
+hs.hotkey.bind(mash,      '-', function() hs.grid.adjustWidth(-1)  end)
+hs.hotkey.bind(mashshift, '=', function() hs.grid.adjustHeight(1)  end)
 hs.hotkey.bind(mashshift, '-', function() hs.grid.adjustHeight(-1) end)
+
+hs.hotkey.bind(mashshift, 'left',  function() hs.window.focusedWindow():focusWindowWest()  end)
+hs.hotkey.bind(mashshift, 'right', function() hs.window.focusedWindow():focusWindowEast()  end)
+hs.hotkey.bind(mashshift, 'up',    function() hs.window.focusedWindow():focusWindowNorth() end)
+hs.hotkey.bind(mashshift, 'down',  function() hs.window.focusedWindow():focusWindowSouth() end)
 
 hs.hotkey.bind(mash, 'M', hs.grid.maximizeWindow)
 
