@@ -42,7 +42,6 @@ all of the usage is defined, after all. For a brief breakdown though, here's wha
 | mashshift + <kbd>↑</kbd>        | Focuses on the window above the current window.                                                        |
 | mashshift + <kbd>↓</kbd>        | Focuses on the window below the current window.                                                        |
 | mash + <kbd>M</kbd>             | Maximize the current window.                                                                           |
-| mashshift + <kbd>M</kbd>        | Minimize the current window.                                                                           |
 | mash + <kbd>F</kbd>             | Make the current window fullscreen.                                                                    |
 | mashshift + <kbd>F</kbd>        | Make the current window *not* fullscreen.                                                              |
 | mash + <kbd>N</kbd>             | Pushes the current window to the next monitor.                                                         |
