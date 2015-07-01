@@ -5,6 +5,8 @@ local tink_sound  = hs.sound.getByName("Tink") -- Not actually used, just as a n
 -- Set up hotkey combinations
 local mash      = {"cmd", "alt", "ctrl"}
 local mashshift = {"cmd", "alt", "shift"}
+local funkymash = {"cmd", "ctrl", "shift"}
+
 -- Set grid size.
 hs.grid.GRIDWIDTH  = 12
 hs.grid.GRIDHEIGHT = 12
@@ -50,6 +52,12 @@ hs.hotkey.bind(mashshift, 'P',     hs.spotify.play)
 hs.hotkey.bind(mashshift, 'O',     hs.spotify.pause)
 hs.hotkey.bind(mashshift, 'N',     hs.spotify.next)
 hs.hotkey.bind(mashshift, 'I',     hs.spotify.previous)
+
+hs.hotkey.bind(funkymash, 'space', hs.itunes.displayCurrentTrack)
+hs.hotkey.bind(funkymash, 'P',     hs.itunes.play)
+hs.hotkey.bind(funkymash, 'O',     hs.itunes.pause)
+hs.hotkey.bind(funkymash, 'N',     hs.itunes.next)
+hs.hotkey.bind(funkymash, 'I',     hs.itunes.previous)
 
 hs.hotkey.bind(mashshift, 'T', function() hs.alert.show(os.date("%A %b %d, %Y - %I:%M%p"), 4) end)
 
