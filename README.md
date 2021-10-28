@@ -19,7 +19,7 @@ git clone git@github.com:Linell/hammerspoon-config.git ~/.hammerspoon
 Now go up to the hammer icon in your menu, click it, and select 'Reload Config'.
 
 You should get a fancy "Hammerspoon, at your service" message and cool alert noise. Boom, 
-installation complete.
+installation complete. Note that you made need to make `alert.wav` executable -- `chmod 777 alert.wav` may help.
 
 ### Usage
 
